@@ -10,8 +10,7 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.
 WHAT ARE THE COLUMNS/VARIABLES IN SUMMERIZED (present) DATASET?
 
 More specifically, the variables in this dataset are the average values of each variable in original dataset, averaged over each activity and each subject. And only the measurements on mean and standard deviations for the original dataset have been selected as asked in assignment. Therefore every variable name begins with averageof_ prefix indicating that every value is average of measurements on variables in original dataset
-
-
+========================================================
 WHAT ARE THE COLUMNS IN ORIGINAL DATASET?
 
 The variables in original dataset are basically features that come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -40,8 +39,7 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
-
-
+===================================================
 WHAT TRANSFORMATIONS ARE PERFORMED ON ORIGINAL DATA TO SUMMERIZE IT?
 Different values were then estimated from these from these signals. These include, for example, mean, standard deviation, median, minimum and maximum values, entropy. But as mentioned earlier the measurements only on mean and standard deviation are selected in summarized data.
 To include only the measurements on mean and standard deviations(SD), only the columns representing the measurements over mean and SD were slice from original training and test data were sliced. Then these selected columns from training and test data were merged together using 'rbind' function.
